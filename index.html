@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Johnson County Pest Control Co | Fast Local Pest Removal</title>
+    <meta name="description" content="Professional pest control services in Johnson County. Same-day response for termites, rodents, bed bugs, and more. Licensed & insured local experts.">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        .header {
+            background: linear-gradient(135deg, #2c5f2d 0%, #4a7c4e 100%);
+            color: white;
+            padding: 1rem 2rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+        .phone {
+            font-size: 1.3rem;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+        }
+        .hero {
+            background: linear-gradient(rgba(44, 95, 45, 0.85), rgba(44, 95, 45, 0.85)), url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600"><rect fill="%234a7c4e" width="1200" height="600"/></svg>');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+        .hero-content {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            line-height: 1.2;
+        }
+        .hero p {
+            font-size: 1.3rem;
+            margin-bottom: 2rem;
+            opacity: 0.95;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+        }
+        .two-column {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: start;
+        }
+        .problems-section {
+            background: #fff3cd;
+            padding: 2rem;
+            border-radius: 8px;
+            border-left: 4px solid #ff6b6b;
+        }
+        .problems-section h2 {
+            color: #d63031;
+            margin-bottom: 1.5rem;
+            font-size: 1.8rem;
+        }
+        .problem-item {
+            background: white;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            border-radius: 4px;
+            border-left: 3px solid #ff6b6b;
+        }
+        .problem-item h3 {
+            color: #2c5f2d;
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+        }
+        .form-section {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .form-section h2 {
+            color: #2c5f2d;
+            margin-bottom: 1rem;
+            font-size: 1.8rem;
+        }
+        .form-section .subtitle {
+            color: #666;
+            margin-bottom: 1.5rem;
+        }
+        .form-group {
+            margin-bottom: 1.25rem;
+        }
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+            color: #333;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 0.75rem;
+            border: 2px solid #ddd;
+            border-radius: 4px;
+            font-size: 1rem;
+            font-family: inherit;
+            transition: border-color 0.3s;
+        }
+        input:focus, select:focus, textarea:focus {
+            outline: none;
+            border-color: #2c5f2d;
+        }
+        textarea {
+            min-height: 100px;
+            resize: vertical;
+        }
+        .submit-btn {
+            background: linear-gradient(135deg, #2c5f2d 0%, #4a7c4e 100%);
+            color: white;
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 4px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            width: 100%;
+            transition: transform 0.2s;
+        }
+        .submit-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        .trust-signals {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 2rem;
+            margin: 3rem 0;
+            padding: 2rem;
+            background: #f8f9fa;
+            border-radius: 8px;
+        }
+        .trust-item {
+            text-align: center;
+        }
+        .trust-item .number {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #2c5f2d;
+            display: block;
+        }
+        .trust-item .label {
+            color: #666;
+            font-size: 0.9rem;
+        }
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+        .service-card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            border: 2px solid #e9ecef;
+            transition: border-color 0.3s;
+        }
+        .service-card:hover {
+            border-color: #2c5f2d;
+        }
+        .service-card h3 {
+            color: #2c5f2d;
+            margin-bottom: 0.5rem;
+        }
+        .footer {
+            background: #2c3e50;
+            color: white;
+            padding: 2rem;
+            text-align: center;
+            margin-top: 3rem;
+        }
+        @media (max-width: 768px) {
+            .two-column {
+                grid-template-columns: 1fr;
+            }
+            .hero h1 {
+                font-size: 2rem;
+            }
+            .hero p {
+                font-size: 1.1rem;
+            }
+            .header-content {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <div class="logo">Johnson County Pest Control Co</div>
+            <div class="phone">📞 (913) 730-6638</div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Dealing With a Pest Problem?</h1>
+            <p>Get fast, professional pest control from licensed Johnson County experts. Same-day service available.</p>
+        </div>
+    </section>
+
+    <div class="container">
+        <div class="trust-signals">
+            <div class="trust-item">
+                <span class="number">24/7</span>
+                <span class="label">Emergency Service</span>
+            </div>
+            <div class="trust-item">
+                <span class="number">Same Day</span>
+                <span class="label">Service Available</span>
+            </div>
+            <div class="trust-item">
+                <span class="number">Licensed</span>
+                <span class="label">& Insured</span>
+            </div>
+            <div class="trust-item">
+                <span class="number">100%</span>
+                <span class="label">Satisfaction Guaranteed</span>
+            </div>
+        </div>
+
+        <div class="two-column">
+            <div class="problems-section">
+                <h2>Common Pest Problems We Solve</h2>
+                
+                <div class="problem-item">
+                    <h3>🐜 Termite Damage</h3>
+                    <p>Termites cause billions in structural damage annually. Early detection and treatment prevents costly repairs.</p>
+                </div>
+
+                <div class="problem-item">
+                    <h3>🐭 Rodent Infestations</h3>
+                    <p>Mice and rats spread disease, contaminate food, and damage wiring. Professional removal is essential for health and safety.</p>
+                </div>
+
+                <div class="problem-item">
+                    <h3>🛏️ Bed Bug Outbreaks</h3>
+                    <p>Bed bugs multiply rapidly and are nearly impossible to eliminate without professional heat treatment.</p>
+                </div>
+
+                <div class="problem-item">
+                    <h3>🕷️ Spider & Insect Control</h3>
+                    <p>From venomous spiders to persistent ants, we handle all common household pests safely and effectively.</p>
+                </div>
+
+                <div class="problem-item">
+                    <h3>🦟 Mosquito & Tick Management</h3>
+                    <p>Protect your family from disease-carrying pests with targeted outdoor treatment programs.</p>
+                </div>
+
+                <div class="problem-item">
+                    <h3>🐝 Stinging Insect Removal</h3>
+                    <p>Wasp, hornet, and bee nest removal by trained professionals using safe, effective methods.</p>
+                </div>
+            </div>
+
+            <div class="form-section">
+                <h2>Get Your Free Quote</h2>
+                <p class="subtitle">Connect with local pest control experts in minutes</p>
+                
+                <form id="leadForm" action="https://hook.us2.make.com/gzcbxb8x2e5xph37kjhm48ur4khvh7ir" method="POST">
+                    <input type="hidden" name="site_id" value="JCO-PEST-001">
+                    <input type="hidden" name="market" value="Johnson County">
+                    <input type="hidden" name="industry" value="Pest Control">
+                    <input type="hidden" name="lead_type" value="Service Request">
+                    <input type="hidden" name="source_url" value="jocopestcontrolco.com">
+                    
+                    <div class="form-group">
+                        <label for="name">Full Name *</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone Number *</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="address">Service Address *</label>
+                        <input type="text" id="address" name="address" required placeholder="Street address">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="city">City *</label>
+                        <input type="text" id="city" name="city" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="pest_type">Type of Pest Problem *</label>
+                        <select id="pest_type" name="pest_type" required>
+                            <option value="">Select pest type...</option>
+                            <option value="Termites">Termites</option>
+                            <option value="Rodents (Mice/Rats)">Rodents (Mice/Rats)</option>
+                            <option value="Bed Bugs">Bed Bugs</option>
+                            <option value="Ants">Ants</option>
+                            <option value="Spiders">Spiders</option>
+                            <option value="Mosquitoes">Mosquitoes</option>
+                            <option value="Wasps/Hornets">Wasps/Hornets</option>
+                            <option value="Cockroaches">Cockroaches</option>
+                            <option value="Other/Multiple">Other/Multiple</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="urgency">How Urgent Is This? *</label>
+                        <select id="urgency" name="urgency" required>
+                            <option value="">Select urgency...</option>
+                            <option value="Emergency - Need help today">Emergency - Need help today</option>
+                            <option value="Urgent - Within 2-3 days">Urgent - Within 2-3 days</option>
+                            <option value="Normal - Within a week">Normal - Within a week</option>
+                            <option value="Just exploring options">Just exploring options</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="details">Describe the Problem (Optional)</label>
+                        <textarea id="details" name="details" placeholder="Tell us more about what you're experiencing..."></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-btn">Get Free Quote →</button>
+                </form>
+            </div>
+        </div>
+
+        <section style="margin-top: 3rem;">
+            <h2 style="text-align: center; color: #2c5f2d; margin-bottom: 2rem;">Complete Pest Control Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>Residential Treatment</h3>
+                    <p>Comprehensive home pest control including interior and exterior barrier protection.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Commercial Services</h3>
+                    <p>Business pest management with minimal disruption and regular maintenance plans.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Termite Inspections</h3>
+                    <p>Thorough inspections with detailed reports for real estate transactions or peace of mind.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Wildlife Removal</h3>
+                    <p>Humane removal of raccoons, squirrels, bats, and other nuisance wildlife.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Preventive Programs</h3>
+                    <p>Quarterly service plans to keep your property pest-free year-round.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Emergency Response</h3>
+                    <p>24/7 availability for urgent pest situations requiring immediate attention.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2024 Johnson County Pest Control Co. Licensed & Insured Pest Control Professionals.</p>
+        <p style="margin-top: 0.5rem; font-size: 0.9rem; opacity: 0.8;">Serving Overland Park, Olathe, Lenexa, Shawnee, Leawood & All of Johnson County, KS</p>
+    </footer>
+
+    <script>
+        document.getElementById('leadForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const formData = new FormData(this);
+            
+            fetch(this.action, {
+                method: 'POST',
+                body: formData,
+                mode: 'no-cors'
+            }).then(() => {
+                window.location.href = 'thanks.html';
+            }).catch(() => {
+                window.location.href = 'thanks.html';
+            });
+        });
+    </script>
+</body>
+</html>
